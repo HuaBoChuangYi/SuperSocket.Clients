@@ -105,5 +105,10 @@ namespace SuperSocket.ClientSend
         {
             this.Client.SendToClient("send", "", "");
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Client.SendToClient("test", new Entity<double> { Value = 1.1 }, ConfigurationManager.AppSettings["toDeviceId"]);
+        }
     }
 }

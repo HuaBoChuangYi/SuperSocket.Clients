@@ -98,6 +98,7 @@
     <Compile Include="ISend.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\Entity.cs" />
     <Compile Include="Model\ReplyDeviceIdModel.cs" />
     <Compile Include="Model\ReplyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

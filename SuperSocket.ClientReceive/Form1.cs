@@ -108,6 +108,16 @@ namespace SuperSocket.ClientReceive
                     }
                     Application.Restart();
                 }
+                else if (key.ToLower() == "test")
+                {
+                    var model = JsonHelper.DeserializeJsonToObject<Entity<double>>(baseModel.Content + "");
+                    baseModel.Content = new ReplyModel
+                    {
+                        Data = model,
+                        Success = 1
+                    };
+                    this.Client.ReplyToClient(baseModel);
+                }
                 //else if (key.ToLower() == "changestatus")
                 //{
                 //    baseModel.Content = new ReplyModel
