@@ -17,6 +17,7 @@ namespace SuperSocket.Helpers
         /// <returns>json字符串</returns>
         public static string SerializeObject(object o)
         {
+
             //, new JsonSerializerSettings
             //  {
             //      ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver()
